@@ -11,11 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <script>
-    try {
-      if (sessionStorage.getItem("age18") === "1") document.documentElement.classList.add("age-ok");
-    } catch (e) {}
-  </script>
 </head>
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" hidden aria-hidden="true" width="0" height="0">
@@ -35,27 +30,7 @@
   <div class="hearts" aria-hidden="true">
     <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
   </div>
-  <div class="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-    <div class="gate-bg" aria-hidden="true">
-      <img src="assets/banner.png" alt="" width="1983" height="793" />
-    </div>
-    <div class="gate-card">
-      <span class="gate-logo" role="img" aria-label="MrPunter"></span>
-      <p class="kicker" data-i18n="gate.kicker">Hej, słońce ♡</p>
-      <div class="gate-mark" id="gate-title">18+</div>
-      <p class="gate-lead" data-i18n="gate.lead">Zanim wejdziesz — ta strona jest tylko dla osób pełnoletnich. Hazard może uzależniać, więc graj z głową i dbaj o siebie.</p>
-      <div class="gate-actions">
-        <button type="button" class="btn btn-gold btn-lg" data-gate="enter" data-i18n="gate.enter">Wchodzę, mam 18+ ♡</button>
-        <button type="button" class="btn btn-ghost btn-lg" data-gate="leave" data-i18n="gate.leave">Nie mam 18 lat</button>
-      </div>
-      <p class="gate-denied" data-i18n="gate.denied">Dziękujemy za szczerość ♡ Wróć do nas, gdy skończysz 18 lat.</p>
-      <div class="lang-switch gate-lang" role="group" aria-label="Language">
-        <button type="button" class="is-active" data-lang="pl">PL</button>
-        <button type="button" data-lang="en">EN</button>
-      </div>
-    </div>
-  </div>
-  <header class="topbar" inert>
+  <header class="topbar">
     <a class="brand" href="#top">
       <img src="assets/logo-mrpunter.png" alt="MrPunter" width="170" height="32" />
     </a>
@@ -73,22 +48,11 @@
     </div>
   </header>
 
-  <main id="top" inert>
+  <main id="top">
     <section class="hero">
       <p class="kicker" data-i18n="hero.eyebrow">Słodki pakiet powitalny</p>
       <h1 data-i18n="hero.title">do 1450€ + 225 FS</h1>
       <p class="lead" data-i18n="hero.lead">Mały prezent na dobry początek: cztery depozyty, a na start 120% do 600€ + Instant Bonus Round + 125 FS.</p>
-      <div class="promo">
-        <span class="promo-label" data-i18n="code.label">Twój słodki kod</span>
-        <button type="button" class="promo-code" data-copy="IRION">
-          <span class="promo-value">IRION</span>
-          <span class="promo-action">
-            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M4 16V6a2 2 0 0 1 2-2h10"/></svg>
-            <span class="promo-copy" data-i18n="code.copy">Kopiuj</span>
-            <span class="promo-done" data-i18n="code.copied">Skopiowano</span>
-          </span>
-        </button>
-      </div>
       <a class="btn btn-blue btn-lg" href="https://mrp.kronvax.com/?mid=391596_2254785" target="_blank" rel="noopener noreferrer" data-i18n="cta.claim">Odbierz pakiet</a>
     </section>
 
@@ -188,7 +152,7 @@
     </section>
   </main>
 
-  <footer class="footer" inert>
+  <footer class="footer">
     <div class="age">18+</div>
     <p data-i18n="footer.legal">Hazard może uzależniać. Graj odpowiedzialnie. 18+. Warunki i obroty u operatora. Strona partnerska MrPunter.</p>
   </footer>
